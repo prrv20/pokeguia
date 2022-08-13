@@ -1,22 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="@/assets/pokemon.jpeg">
+    <PokeComponent></PokeComponent>
   </div>
+  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PokeComponent from './components/PokeComponent.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PokeComponent
   }
 }
 </script>
 
 <style>
+body{
+  background-color: rgba(238, 238, 238, 0.582);
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
